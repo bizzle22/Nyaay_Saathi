@@ -213,7 +213,7 @@ class LegalAnalysisChatbot:
             }
         
     def predict_duration(category):
-        model = joblib.load('C:/Users/Sahil Brid/Downloads/Hack2Infinity/backend/final_model.pkl') 
+        model = joblib.load('final_model.pkl') 
         prediction = model.predict(pd.DataFrame({'CATEGORY': [category]}))
         return int((prediction[0]))
 
